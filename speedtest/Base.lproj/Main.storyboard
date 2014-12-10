@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="speedtest" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Time to decode some JSON!" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9c7-BW-H5Z">
+                                <rect key="frame" x="189" y="20" width="222" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LEZ-w8-jOF">
+                                <rect key="frame" x="275" y="48" width="50" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="mdI-dV-DBd"/>
+                                </constraints>
+                                <state key="normal" title="Swift A">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="handleSwiftATapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bW8-pU-3Zu"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kTu-gv-2C6">
+                                <rect key="frame" x="275" y="86" width="50" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="JMR-rZ-ONu"/>
+                                </constraints>
+                                <state key="normal" title="Swift B">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="handleSwiftBTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="AuL-kN-lpy"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wbW-Cq-ncP">
+                                <rect key="frame" x="275" y="124" width="50" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="Zns-97-ube"/>
+                                </constraints>
+                                <state key="normal" title="Obj-C">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="handleObjCTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Vdg-LT-1LN"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="LEZ-w8-jOF" firstAttribute="top" secondItem="9c7-BW-H5Z" secondAttribute="bottom" constant="7.5" id="Ag1-rJ-rtU"/>
+                            <constraint firstAttribute="centerX" secondItem="9c7-BW-H5Z" secondAttribute="centerX" id="CkK-HV-qvC"/>
+                            <constraint firstAttribute="centerX" secondItem="wbW-Cq-ncP" secondAttribute="centerX" id="DMm-or-bVW"/>
+                            <constraint firstItem="wbW-Cq-ncP" firstAttribute="top" secondItem="kTu-gv-2C6" secondAttribute="bottom" constant="8" id="GF3-mR-GdD"/>
+                            <constraint firstAttribute="centerX" secondItem="kTu-gv-2C6" secondAttribute="centerX" id="Tmu-vp-WY4"/>
+                            <constraint firstAttribute="centerX" secondItem="LEZ-w8-jOF" secondAttribute="centerX" id="q2b-zc-NDX"/>
+                            <constraint firstItem="kTu-gv-2C6" firstAttribute="top" secondItem="LEZ-w8-jOF" secondAttribute="bottom" constant="8" id="zAJ-bK-1Or"/>
+                            <constraint firstItem="9c7-BW-H5Z" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="zIz-Rf-oQC"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="369" y="400"/>
+        </scene>
+    </scenes>
+</document>
